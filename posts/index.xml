@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>IDE_Fantasy on IDE_Fantasy glove documentation</title>
-    <link>http://example.org/posts/</link>
+    <link>https://loopynid.github.io/ideFantasyDoc/posts/</link>
     <description>Recent content in IDE_Fantasy on IDE_Fantasy glove documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 26 Mar 2019 16:46:00 +0200</lastBuildDate>
     
-	<atom:link href="http://example.org/posts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://loopynid.github.io/ideFantasyDoc/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Manual of Magnetic Dance glove</title>
-      <link>http://example.org/posts/manual-of-magnetic-dance-glove/</link>
+      <link>https://loopynid.github.io/ideFantasyDoc/posts/manual-of-magnetic-dance-glove/</link>
       <pubDate>Tue, 26 Mar 2019 16:46:00 +0200</pubDate>
       
-      <guid>http://example.org/posts/manual-of-magnetic-dance-glove/</guid>
+      <guid>https://loopynid.github.io/ideFantasyDoc/posts/manual-of-magnetic-dance-glove/</guid>
       <description>General Overview: The glove sets up a wifi network. The computer running supercollider connects to this network and recieves the sensor data from the glove. In parallel it connects to a second wifi network which provides internet access.
 Steps:
  connect the computer running supercollider to the &amp;ldquo;glove network&amp;rdquo; access internet via the glove  Connect to &amp;ldquo;glove network&amp;rdquo; Firstly connect the glove to power. After 3-4 minutes your computer should de- tect a wifi network named MD.</description>
@@ -24,19 +24,19 @@ Steps:
     
     <item>
       <title>Glove assembly</title>
-      <link>http://example.org/posts/glove-assembly/</link>
+      <link>https://loopynid.github.io/ideFantasyDoc/posts/glove-assembly/</link>
       <pubDate>Tue, 26 Mar 2019 16:46:00 +0200</pubDate>
       
-      <guid>http://example.org/posts/glove-assembly/</guid>
+      <guid>https://loopynid.github.io/ideFantasyDoc/posts/glove-assembly/</guid>
       <description>Components needed  raspberry pi zero w (rpi zero w is preferred because of size, but this setup is also tested on rpi 3 and rpi 3+) sd card at least 2gb in size the magnetic dance rasbian image an i2c sensor in this case a BNO055 4x patch cables  Assembly Installing rasbian image to sd card The downloaded image will be in .zip format. All information needed for this step can be found here</description>
     </item>
     
     <item>
       <title>Rasbian image setup</title>
-      <link>http://example.org/posts/rasbian-image-setup/</link>
+      <link>https://loopynid.github.io/ideFantasyDoc/posts/rasbian-image-setup/</link>
       <pubDate>Tue, 26 Mar 2019 16:47:00 +0200</pubDate>
       
-      <guid>http://example.org/posts/rasbian-image-setup/</guid>
+      <guid>https://loopynid.github.io/ideFantasyDoc/posts/rasbian-image-setup/</guid>
       <description>The image used in this project is based on the rasbian stretch lite Version: November 2018.
 Wifi functionality For the purpose of this project we need to connect to a &amp;ldquo;parent&amp;rdquo; network and setup a &amp;ldquo;child&amp;rdquo; network. To achieve this we will need hostapd, dnsmasq, iptables-persistent and some configuration because we want to use the built in wifi as an client to a network (&amp;ldquo;parent&amp;rdquo; network) and an access point for a second network (&amp;ldquo;child&amp;rdquo; network) at the same time.</description>
     </item>
