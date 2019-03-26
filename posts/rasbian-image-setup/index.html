@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.54.0" />
+    <meta name="description" content="Documentation of the sensor glove used in the IDE_Fantasy performace">
+<meta name="author" content="Nik Charalampidis">
+
+    <link rel="icon" href="/images/favicon.png" type="image/png">
+
+    <title>Rasbian image setup :: IDE_Fantasy glove documentation</title>
+
+    
+    <link href="/css/nucleus.css?1553615402" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1553615402" rel="stylesheet">
+    <link href="/css/hybrid.css?1553615402" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1553615402" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1553615402" rel="stylesheet">
+    <link href="/css/auto-complete.css?1553615402" rel="stylesheet">
+    <link href="/css/theme.css?1553615402" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1553615402" rel="stylesheet">
+    
+
+    <script src="/js/jquery-2.x.min.js?1553615402"></script>
+
+    <style type="text/css">
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/posts/rasbian-image-setup/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a href="/"><h3 style="color: #323232">IDE_Fantasy glove documentation</h3></a>
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1553615402"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1553615402"></script>
+<script type="text/javascript">
+    
+        var baseurl = "http:\/\/example.org\/";
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1553615402"></script>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/posts/" title="IDE_Fantasy" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/posts/">
+          IDE_Fantasy
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/posts/manual-of-magnetic-dance-glove/" title="Manual of Magnetic Dance glove" class="dd-item ">
+        <a href="/posts/manual-of-magnetic-dance-glove/">
+        Manual of Magnetic Dance glove
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/posts/glove-assembly/" title="Glove assembly" class="dd-item ">
+        <a href="/posts/glove-assembly/">
+        Glove assembly
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/posts/rasbian-image-setup/" title="Rasbian image setup" class="dd-item active">
+        <a href="/posts/rasbian-image-setup/">
+        Rasbian image setup
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+
+    
+    <section id="footer">
+      <p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fas fa-heart"></i></a> from <a href="http://getgrav.org">Grav</a> and <a href="http://gohugo.io/">Hugo</a></p>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'></a> > <a href='/posts/'>IDE_Fantasy</a> > Rasbian image setup
+          
+         
+          
+         
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#wifi-functionality">Wifi functionality</a>
+<ul>
+<li><a href="#setup">Setup</a></li>
+</ul></li>
+<li><a href="#sensor-data-relaying">Sensor data relaying</a></li>
+<li><a href="#raspap-webgui">Raspap webgui</a></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Rasbian image setup
+            </h1>
+          
+
+        
+
+
+
+
+
+<p><em>The image used in this project is based on the rasbian stretch lite
+Version: November 2018.</em></p>
+
+<h2 id="wifi-functionality">Wifi functionality</h2>
+
+<p>For the purpose of this project we need to connect to a &ldquo;parent&rdquo; network and
+setup a &ldquo;child&rdquo; network. To achieve this we will need hostapd, dnsmasq,
+iptables-persistent and some configuration because we want to use the built in
+wifi as an client to a network (&ldquo;parent&rdquo; network) and an access point for a
+second network (&ldquo;child&rdquo; network) at the same time.</p>
+
+<h3 id="setup">Setup</h3>
+
+<p><strong>- /etc/network/interfaces.d/ap</strong></p>
+
+<p>To file <code>/etc/network/interfaces.d/ap</code> we add:</p>
+
+<pre><code class="language-nil">allow-hotplug uap0
+auto uap0
+iface uap0 inet static
+address 10.3.141.1
+netmask 255.255.255.0
+</code></pre>
+
+<p><code>/etc/network/interfaces</code> file contains network interface configuration
+information for the both Ubuntu and Debian Linux. This is where you configure
+how your system is connected to the network.</p>
+
+<p><strong>- /etc/udev/rules.d/90-wireless.rules</strong></p>
+
+<p>In file <code>/etc/udev/rules.d/90-wireless.rules</code></p>
+
+<pre><code class="language-nil">ACTION==&quot;add&quot;, SUBSYSTEM==&quot;ieee80211&quot;, KERNEL==&quot;phy0&quot;, \
+ RUN+=&quot;/sbin/iw phy %k interface add uap0 type __ap&quot;
+</code></pre>
+
+<p>In a GNU/Linux system, while devices low level support is handled at the
+kernel level, the management of events related to them is managed in
+userspace by udev, and more precisely by the udevd daemon.</p>
+
+<p><strong>- /lib/dhcpcd/dhcpcd-hooks/10-wpa_supplicant</strong></p>
+
+<p><code>/lib/dhcpcd/dhcpcd-hooks/10-wpa_supplicant</code> should look like this:</p>
+
+<pre><code class="language-nil">if [ -z &quot;$wpa_supplicant_conf&quot; ]; then
+        for x in \
+                /etc/wpa_supplicant/wpa_supplicant-&quot;$interface&quot;.conf \
+                /etc/wpa_supplicant/wpa_supplicant.conf \
+                /etc/wpa_supplicant-&quot;$interface&quot;.conf \
+                /etc/wpa_supplicant.conf \
+        ; do
+                if [ -s &quot;$x&quot; ]; then
+                        wpa_supplicant_conf=&quot;$x&quot;
+                        break
+                fi
+        done
+fi
+: ${wpa_supplicant_conf:=/etc/wpa_supplicant.conf}
+
+if [ &quot;$ifwireless&quot; = &quot;1&quot; ] &amp;&amp; \
+    type wpa_supplicant &gt;/dev/null 2&gt;&amp;1 &amp;&amp; \
+    type wpa_cli &gt;/dev/null 2&gt;&amp;1
+then
+        if [ &quot;$reason&quot; = &quot;IPV4LL&quot; ]; then
+                wpa_supplicant -B -iwlan0 -f/var/log/wpa_supplicant.log -c/etc/wpa_supplicant/wpa_supplicant.conf
+        fi
+fi
+</code></pre>
+
+<p><strong>- Setting up the client to the &ldquo;parent&rdquo; network</strong></p>
+
+<p>We need to create <code>/etc/wpa_supplicant/wpa_supplicant.conf</code> and add the
+networks credentials. <a href="https://wiki.archlinux.org/index.php/WPA%5Fsupplicant">Here</a> more informations about more advaced informations can be found.</p>
+
+<pre><code class="language-nil">ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+country=US
+
+network={
+    ssid=&quot;_ST_SSID_&quot;
+    psk=&quot;_ST_PASSWORD_&quot;
+    key_mgmt=WPA-PSK
+}
+</code></pre>
+
+<p>Replace <span class="underline">ST_SSID</span> with the network SSID and <span class="underline">ST_PASSWORD</span> with wifi password.</p>
+
+<p><strong>- Install packages needed</strong></p>
+
+<pre><code class="language-nil">apt-get update
+apt-get install -y hostapd dnsmasq iptables-persistent
+</code></pre>
+
+<p><strong>- /etc/dnsmasq.conf</strong></p>
+
+<pre><code class="language-nil">interface=lo,uap0
+no-dhcp-interface=lo,wlan0
+bind-interfaces
+server=8.8.8.8
+dhcp-range=10.3.141.50,10.3.141.255,12h
+</code></pre>
+
+<p><strong>- /etc/hostapd/hostapd.conf</strong></p>
+
+<p>Here we can set the credentials and characteristics of our access point.</p>
+
+<pre><code class="language-nil">interface=uap0
+ssid=MD // ssid of access point
+hw_mode=g
+channel=6
+macaddr_acl=0
+auth_algs=1
+ignore_broadcast_ssid=0
+wpa=2
+wpa_passphrase=ChangeMe // password of access point
+wpa_key_mgmt=WPA-PSK
+wpa_pairwise=TKIP
+rsn_pairwise=CCMP
+</code></pre>
+
+<p><strong>- /etc/default/hostapd</strong></p>
+
+<p>To this file we add:</p>
+
+<pre><code class="language-nil">DAEMON_CONF=&quot;/etc/hostapd/hostapd.conf&quot;
+</code></pre>
+
+<p><strong>- Bridge of ap and client side</strong>
+At this step we bridge ap and client side so that clients to our access point
+can access the internet.</p>
+
+<pre><code class="language-nil">echo &quot;net.ipv4.ip_forward=1&quot; &gt;&gt; /etc/sysctl.conf
+echo 1 &gt; /proc/sys/net/ipv4/ip_forward
+iptables -t nat -A POSTROUTING -s 10.3.141.0/24 ! -d 10.3.141.0/24 -j MASQUERADE
+iptables-save &gt; /etc/iptables/rules.v4
+</code></pre>
+
+<p>Lastly the raspberry pi has to <strong>reboot</strong>.</p>
+
+<p><em>for this wifi setup this <a href="https://github.com/peebles/rpi3-wifi-station-ap-stretch">guide</a> was used.</em></p>
+
+<h2 id="sensor-data-relaying">Sensor data relaying</h2>
+
+<p>ENABLE I2C <a href="https://www.raspberrypi-spy.co.uk/2014/11/enabling-the-i2c-interface-on-the-raspberry-pi/">https://www.raspberrypi-spy.co.uk/2014/11/enabling-the-i2c-interface-on-the-raspberry-pi/</a>
+We use a bno055 absolute orientation sensor. The sensor can be connected to
+the raspberry pi zero w like this:
+<img src="/ox-hugo/4.png" alt="" /></p>
+
+<p>To install the libraries needed to use the bno055 with a raspberry pi follow
+this <a href="https://learn.adafruit.com/adafruit-bno055-absolute-orientation-sensor/python-circuitpython#circuitpython-installation-of-bno055-library-7-6">guide</a>.</p>
+
+<p>We will also need to use the python library <code>python-osc</code> to send sensor data
+over osc.</p>
+
+<pre><code class="language-nil">pip install python-osc // installs python-osc
+// you may need to use the --user option
+</code></pre>
+
+<p>the python script for sending the sensor data is this:</p>
+
+<pre><code class="language-nil">import time
+import board
+import busio
+import adafruit_bno055
+import argparse
+import random
+from pythonosc import osc_message_builder
+from pythonosc import udp_client
+time.sleep(1)
+i2c = busio.I2C(board.SCL, board.SDA)
+sensor = adafruit_bno055.BNO055(i2c)
+
+client = udp_client.SimpleUDPClient(&quot;10.3.141.100&quot;, 57120) // address sensor data is send to
+
+while True:
+     client.send_message(&quot;/accelerometer&quot;, sensor.accelerometer)
+     time.sleep(0.0025) // the delay is placed inbetween the messages for better stability
+     client.send_message(&quot;/magnetometer&quot;, sensor.magnetometer)
+     time.sleep(0.0025)
+     client.send_message(&quot;/gyroscope&quot;, sensor.gyroscope)
+     time.sleep(0.0025)
+     client.send_message(&quot;/temperature&quot;, sensor.temperature)
+     time.sleep(0.0025)
+</code></pre>
+
+<p>Lastly the python script must start on boot.
+This is achieved by placing this:</p>
+
+<pre><code class="language-nil">sudo -H -u pi python3 /home/pi/magneticdance/bnoTest.py &amp;
+</code></pre>
+
+<p>into <code>/etc/rc.local</code> just before <code>exit 0</code>.</p>
+
+<h2 id="raspap-webgui">Raspap webgui</h2>
+
+<p>For the webgui functionality we used <a href="https://github.com/billz/raspap-webgui">Raspap-webgui</a>.
+There is a quick install guide but this didn&rsquo;t work, so we have to do a
+<a href="https://github.com/billz/raspap-webgui#manual-installation">manual install</a>.</p>
+
+<p><strong>To use the Magnetic Dance glove reference <a href="https://loopynid.github.io/portfolio/magneticdance/#manual-of-magnetic-dance-glove">the Manual</a></strong></p>
+
+
+<footer class=" footline" >
+	
+</footer>
+
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/posts/glove-assembly/" title="Glove assembly"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/posts/manual-of-magnetic-dance-glove/" title="Manual of Magnetic Dance glove" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1553615402"></script>
+    <script src="/js/perfect-scrollbar.min.js?1553615402"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1553615402"></script>
+    <script src="/js/jquery.sticky.js?1553615402"></script>
+    <script src="/js/featherlight.min.js?1553615402"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1553615402"></script>
+    <script src="/js/highlight.pack.js?1553615402"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom.71422.js?1553615402"></script>
+    <script src="/js/learn.js?1553615402"></script>
+    <script src="/js/hugo-learn.js?1553615402"></script>
+
+    <link href="/mermaid/mermaid.css?1553615402" type="text/css" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1553615402"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    
+
+  </body>
+</html>
+
