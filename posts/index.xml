@@ -28,7 +28,7 @@ Steps:
       <pubDate>Tue, 26 Mar 2019 16:46:00 +0200</pubDate>
       
       <guid>https://loopynid.github.io/ideFantasyDoc/posts/glove-assembly/</guid>
-      <description>Components needed  raspberry pi zero w (rpi zero w is preferred because of size, but this setup is also tested on rpi 3 and rpi 3+) sd card at least 2gb in size the magnetic dance rasbian image an i2c sensor in this case a BNO055 4x patch cables  Assembly Installing rasbian image to sd card The downloaded image will be in .zip format. All information needed for this step can be found here</description>
+      <description>Components needed  raspberry pi zero w (rpi zero w is preferred because of size, but this setup is also tested on rpi 3 and rpi 3+) sd card at least 2gb in size the IDE Fantasy rasbian image an i2c sensor in this case a BNO055 4x patch cables  Assembly Installing rasbian image to sd card The downloaded image will be in .zip format. All information needed for this step can be found here</description>
     </item>
     
     <item>
